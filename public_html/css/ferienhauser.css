@@ -1,0 +1,76 @@
+/* 
+    Created on : 22.06.2016, 13:33:32
+    Author     : franks_macbook
+*/
+
+/* Seite Ferienhäuser */
+/* Flexcontainer Ferienhäuser */
+#flex_fh {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#dancenter {
+    flex: 0 1 50em;
+    min-width: 25em;
+    margin: 0 1em 2em 1em;
+}
+
+
+#logo_dancenter {
+    -webkit-box-shadow: 5px 5px 1px 0px #54a9a9;
+    box-shadow: 5px 5px 1px 0px #54a9a9;  
+    -webkit-border-radius: 3% 3% 3% 3% / 8% 8% 8% 8%;
+    border-radius: 3% 3% 3% 3% / 8% 8% 8% 8%;
+    border: 0px solid; 
+    width: 100%; 
+    height: auto;
+}
+
+#novasol {
+     flex: 0 1 15em;
+     min-width: 8em;
+     margin: 0 1em 2em 1em;
+}
+
+#logo_novasol {
+    -webkit-border-radius: 9% 9% 9% 9% / 8% 8% 8% 8%;
+    border-radius: 9% 9% 9% 9% / 8% 8% 8% 8%;  
+    -webkit-box-shadow: 5px 5px 1px 0px #54a9a9;
+    box-shadow: 5px 5px 1px 0px #54a9a9;
+    border: 0px solid; 
+    width: 100%; 
+    height: auto;
+}
+
+#dansommer {
+    flex: 0 1 40em;
+    min-width: 25em;
+    margin: 0 1em 2em 1em;
+}
+
+#logo_dansommer {
+    -webkit-box-shadow: 5px 5px 1px 0px #54a9a9;
+    box-shadow: 5px 5px 1px 0px #54a9a9;  
+    -webkit-border-radius: 3% 3% 3% 3% / 10% 10% 10% 10%;
+    border-radius: 3% 3% 3% 3% / 10% 10% 10% 10%;
+    border: 0px solid; 
+    width: 100%; 
+    height: auto;
+}
+
+#cuendet {
+    flex: 0 1 75em;
+    min-width: 30em;
+    margin: 0 1em 2em 1em;
+}
+
+#logo_cuendet {
+    -webkit-border-radius: 2% 2% 2% 2% / 10% 10% 10% 10%;
+    border-radius: 2% 2% 2% 2% / 10% 10% 10% 10%;  
+    -webkit-box-shadow: 5px 5px 1px 0px #54a9a9;
+    box-shadow: 5px 5px 1px 0px #54a9a9;
+    width: 100%; 
+    height: auto;
+}

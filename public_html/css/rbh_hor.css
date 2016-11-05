@@ -1,0 +1,1381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* font-size wird auf 10px gesetzt */
+    font-family: Arial, Helvetica, sans-serif;
+    -ms-hyphens: auto;  /* Silbentrennung Edge und IE */
+    -moz-hyphens: auto; /* Silbentrennung für Firefox */
+    -webkit-hyphens: auto;  /* Silbentrennung Safari */
+    -o-hyphens: auto;   /* Silbentrennung in Opera */
+    hyphens: auto;  /* Silbentrennung */
+}
+
+body {
+    line-height: 1.5;
+    max-width: 1024px;
+    margin: 0 auto;
+    color: black;  
+    background-position: left top;  
+    background-color: #93cdff;
+    text-align: justify;
+}
+
+ ul,
+ ol,
+ p {
+    font-size: 1.6rem;
+}
+
+ul,
+ol {
+    text-align: left;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1, h2 {
+    -ms-hyphens: none;  /* Silbentrennung Edge und IE */
+    -moz-hyphens: none; /* Silbentrennung für Firefox */
+    -webkit-hyphens: none;  /* Silbentrennung Safari */
+    -o-hyphens: none;   /* Silbentrennung in Opera */
+    hyphens: none;  /* Silbentrennung */
+}
+
+ul,
+ol,
+p,
+h1,
+h2,
+h3 {
+   /* line-height: 150%;*/
+    margin: 1em 0;
+}
+
+ul,
+ol  {
+   margin-left: 3em; 
+}
+
+a {  
+  font-weight: bold;  
+  color: #3333ff;    
+  text-decoration: none
+}
+
+hr {
+    width: 100%; 
+    height: 0.2em; /* 2px */
+}
+
+/* Gestaltung von Fotogalerien */
+/*----------------------------------------------------------------------------*/
+.galeriebreite {
+    width: 100%;
+}
+
+.fotogalerie {
+    width: 60%;
+    min-width: 25em;
+    margin: 2rem auto;
+}
+
+.fotogalerie p {
+    margin: 1rem auto 2rem auto;
+    text-align: center;
+}
+
+.fotogalerie_img {
+    max-width: 96%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+/*----------------------------------------------------------------------------*/
+.powerpoint {
+    max-width: 100%;
+    min-width:30rem;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.videocon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: auto; 
+    margin: 2rem 0;
+}
+
+.reisefilm {
+    flex: 0 1 35rem;
+    max-width: 100%;
+    min-width: 28rem;
+    height: auto;
+}
+
+.text_video {
+    flex: 1 1 50rem; 
+    margin-left: 5%;
+    min-width: 30rem;
+}
+video {
+    
+}
+
+video embed {
+    display: block; 
+    float: left; 
+    margin-top: 1.3em;  /* 10px */
+}
+/* Definition des Seitencontainers*/
+#seite {
+    
+    display: flex; /* Flexbox */
+    flex-direction: column; 
+    background-position: center top;  
+    width: 100%; 
+    background-repeat: repeat;  
+    margin-right: auto;  
+    margin-left: auto;
+}
+
+header{
+    -ms-flex-negative: 0; /* beseitigt einen Fehler in IE11 - zu große Höhe im Header */
+    text-align: center;
+    background-color: #efe059;
+    background-position: center top;
+    /*background-image: url("images/rbh-banner-1920x300.svg");
+    background-repeat: no-repeat;*/
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+}
+
+header img {
+     max-width: 100%;
+}
+
+/* Mobile first */
+
+header h1 {
+    
+    font-size: 200%;
+    margin-top: 0.5%; /* 127px */ 
+    margin-bottom: 0.5%;
+}
+
+
+/* Menu mit Menu-Button für Displays<768px */
+/* Meunuelemente untereinander angeordnet */
+.main-menu-btn {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 2.8em;
+    text-indent: 3em;
+    font-size: 1.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0);*/
+    background-color: #3092c0/*#fff*/;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/* hamburger icon */
+.main-menu-btn-icon, 
+.main-menu-btn-icon:before, 
+.main-menu-btn-icon:after {
+    position: absolute;
+    top: 50%;
+    left: 0.2em;
+    height: 0.2em;
+    width: 2em;
+    background: #fff;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.main-menu-btn-icon:before {
+    content: '';
+    top: -7px;
+    left: 0;
+}
+
+.main-menu-btn-icon:after {
+    content: '';
+    top: 7px;
+    left: 0;
+}
+
+/* x icon */
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+    height: 0;
+    background: transparent;
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* hide menu state checkbox (keep it visible to screen readers) */
+#main-menu-state {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+}
+
+/* hide the menu in mobile view */
+#main-menu-state:not(:checked) ~ #main-menu {
+    display: none;
+}
+
+#main-menu-state:checked ~ #main-menu {
+    display: block;
+}
+
+nav p {
+      font-weight: bold;
+      color: #fff;
+  }
+
+/*Media Querryfür Smartmenu - Nav über ganze Breite, Text justified */  
+@media only screen and (min-width: 768px) { 
+    #main-menu > li {
+        /*float: none;*/
+	display: table-cell;
+	width: 16.5%;
+        height: 100%;
+        vertical-align: middle;
+	text-align: center;
+    }
+    /* hide the button in desktop view */
+    .main-menu-btn {
+        position: absolute;
+        top: -99999px;
+    }
+    /* always show the menu in desktop view */
+    #main-menu-state:not(:checked) ~ #main-menu {
+        display: block;
+    }    
+}
+
+#banner_li {  
+  clear: both;  
+  float: left;  
+  z-index: 3;
+}
+
+#inhalt {
+    -ms-flex-negative: 0; /* beseitigt einen Fehler in IE11 - zu große Höhe von inhalt am Dokumentende */
+    background-color: #93cdff;  
+    z-index: auto;  
+    width: 94%;  
+    margin: 2.5em 3% 0 3%;
+    padding-bottom: 2.5em;
+}
+
+.maincontent {/* Klassenselektor für Container #inhalt */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+footer {
+    background-color: #007db4;  
+    font-size: 1.3rem;  /* 14px */
+    font-weight: bold;  
+    color: #ffff66;  
+    padding-top: 0.4em; /* 4px */ 
+    padding-bottom: 0.4em; /* 4px */
+    width: 100%;  
+    margin: 0 0 1.5em 0; /* 35px */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+footer button.ui-button {
+    flex: 1 1 5em;
+    margin-right: 1em;
+}
+
+footer p {
+    font-size: 1.2rem;
+    display: inline-block;
+    flex: 1 1 8em;
+    margin-top: 0.375em;  
+    margin-right: 0px;  
+    margin-bottom: 0px;  
+    margin-left: 1em;
+}
+
+.unsichtbar {
+    visibility: hidden;
+}
+
+.tab_kontakt {
+    display: table;
+    text-align: left;
+    border: 0;
+}
+
+.tab_kontakt_zeile {
+    display: table-row;
+}
+
+.tab_kontakt_s1 {
+    display: table-cell;
+    width: 25%;
+}
+
+.tab_kontakt_s2 {
+    display: table-cell;
+    max-width: 70%;
+}
+/*
+.tab_kontakt_zeile:first-child {
+    width: 25%;
+}
+*/
+
+.ganze_breite {
+    float: left;
+    width: 100%;
+}
+
+.hoteltextflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hoteltext {
+    flex: 1 1 70%;
+    /*float: left;
+    width: 80%;*/
+}
+
+.hoteltext100 {
+    flex: 1 1 100%;
+}
+
+.portraetflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portraetitem {
+    flex: 0 0 15rem;
+    width: 15rem;
+    height: auto;
+    margin: 0 2rem;
+}
+
+.portraet_con_re {
+    flex: 0 0 15rem;
+    min-width: 15rem;
+    height: auto;
+    margin: 2% 0 1.5% 3.5%;
+}
+
+.portraet_con_li{
+    flex: 0 0 15rem;
+    min-width: 15rem;
+    height: auto;
+    margin: 2% 3.5% 1.5% 0;
+}
+
+.portraet {
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+    /*float: left;
+    margin-left: 3.5%;  */
+}
+
+.einruecken {  
+  text-align: justify;  
+  padding-left: 6.25em;
+}
+
+.linkfarbe {  
+  color: #33ccff;
+}
+
+/* Interaktive Karten */
+
+.imap {
+    width:100%;
+    border: 1px solid #54a9a9; 
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+/* Flexible Gestaltung von Teilen der Seiten - kurz zusammengefasst */
+/* Mobile first */
+.flexcon, 
+.flexcon1,
+#nla_widget {
+    display: block;
+}
+
+.mapflex {
+    width:90%;
+    margin: 3% auto;
+}
+
+/*----------------------------------------------------------------------------*/
+
+@media only screen and (min-width:650px) {
+    .flexcon, 
+    .flexcon1,
+    .mapflex {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .flexcon1 {
+        flex-direction: row;
+    }
+    
+    .flex_text {
+        flex: 0 1 53rem;
+        min-width: 30rem;
+        margin: 0;
+     }
+     
+    .flex_text1 {
+        flex: 0 1 70rem;
+        min-width: 30rem;
+        margin: 0;
+     }
+    
+    .flexarticle1 {
+        margin: 0 2rem 0 0;
+    }
+    
+    .flexarticle2 {
+        margin: 0 0 0 2rem;
+    }
+    
+    .aida3 {
+        flex: 0 1 64rem;
+        min-width: 30rem;
+        margin: 0 2rem 0 0;
+    }
+    
+    .flex_pic43 {
+        flex: 0 1 40rem;
+        min-width: 28rem;
+    }
+    
+    .flex_pic34 {
+        flex: 0 1 26.6rem;
+        min-width: 13.3rem;
+    }
+    /* Seite Nothing like Australia, eingebundenes Widget */
+    #nla_widget {
+        flex: 0 0 30.2rem;
+        height: 53.6rem;
+    }
+}
+
+/* Mobile First */ 
+/*----------------------------------------------------------------------------*/
+.reise_container_1,
+.reise_container_2,
+.reise_container_6 {
+    display: block;   
+}
+
+.reisebildsize34 { 
+    width:46.6%;
+    max-width: 30rem; /* 300px */ 
+    min-width: 21rem;
+    height: auto;  /* 400px */
+    margin: 1.6em auto;
+ }
+
+.reisebildsize43 {
+    width: 70%;
+    max-width: 40rem;
+    min-width: 28rem;
+    height: auto;
+    margin: 1.6em auto;
+}
+
+.reise_container_3 {
+    display: inline-block;
+    margin: 1.6rem 0.75rem;
+    
+}
+
+.bild43 {  
+  width: 100%;  /* 400px */  
+  height: auto; /* 300px */ 
+  -webkit-border-radius: 6% 6% 6% 6% / 7% 7% 7% 7%;
+  border-radius: 6% 6% 6% 6% / 7% 7% 7% 7%;  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+.bild34 {  
+  width: 100%; /* 300px */  
+  height: auto;  /* 400px */
+  -webkit-border-radius: 7% 7% 7% 7% / 6% 6% 6% 6%;
+  border-radius: 7% 7% 7% 7% / 6% 6% 6% 6%;  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+/*----------------------------------------------------------------------------*/
+/* Version für Bildschirm über 650px */
+/*----------------------------------------------------------------------------*/
+@media only screen and (min-width:650px) {
+    .reisebildsize43 {
+        width: 42%;
+        min-width: 28rem;  /* 400px */  
+        height: auto; /* 300px */
+        margin: 1.6em 0;
+    }
+
+    .reisebildsize34 {  
+        width: 32%;
+        min-width: 21em; /* 300px */  
+        height: auto;  /* 400px */
+        margin: 1.6em 0;
+ }
+
+    .reise_container_1 {
+        float: left;
+        margin-right: 2.5rem;
+    }
+    
+    .reise_container_2 {
+        float: right; 
+        margin-left: 2.5rem;  
+    }
+    
+    .reise_container_3,
+    .reise_container_4,
+    .reise_container_5 {
+        display: inline-block;
+        margin: 1.6rem 0.75rem;
+    }
+    
+    .reise_container_4 {
+        float: left;
+        margin: 1.6rem 0.75rem 1.6rem 5%;
+    }
+
+    .reise_container_5 {
+        float: right;
+        margin: 1.6rem 5% 1.6rem 0.75rem;
+    }
+    
+    .reise_container_6 {
+        float: left;
+        margin-top: 6%;
+    }
+}
+/*----------------------------------------------------------------------------*/
+
+.bildpan {  
+  width: 99%; /* 954px */
+  min-width: 29em;
+  height: auto; /* 214px */
+    -webkit-border-radius: 2% 2% 2% 2% / 8% 8% 8% 8%;
+  border-radius: 2% 2% 2% 2% / 8% 8% 8% 8%;  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+
+.bildtitel43,
+.bildtitel34,
+.bildtitelpan,
+.bildtitelportraet {
+    position: relative;
+}
+
+.bildtitelpan {
+    width: 100%; /* 954px */
+    height: auto; /* 214px */ 
+    margin: 0 auto;
+    
+}
+
+.bildtitel43 img, 
+.bildtitel34 img,
+.bildtitelpan img,
+.bildtitelportraet img {
+    display: block;
+}
+
+.bildtitel43 span,
+.bildtitel34 span,
+.bildtitelpan span,
+.bildtitelportraet p {
+    font-size: 135%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 1.25em; /* 20px */
+    color: #000;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bildtitelportraet p {
+    position: relative;
+    border-bottom-left-radius: 9% 120%;
+    border-bottom-right-radius: 9% 120%;
+    border-top-left-radius: 9% 120%;
+    border-top-right-radius: 9% 120%;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+.bildtitel34 span {
+    border-bottom-left-radius: 9% 120%;
+    border-bottom-right-radius: 9% 120%;
+}
+
+.bildtitel43 span {
+    border-bottom-left-radius: 14%  250%;
+    border-bottom-right-radius: 14% 250%;
+}
+
+.bildtitelpan span {
+    width: 99%;
+    left: 0.5%;
+    border-bottom-left-radius: 2% 90%;
+    border-bottom-right-radius: 2% 90%;
+}
+/* h3-Überschrift für Unterabschnitte bei Reiseberichten */
+.reisenueberschrift {  
+    margin-top: 5rem; /* 50px */
+}
+
+/* 1. Container "Beste Reisezeit" auf Seiten "... - kurz zusammengefasst" */
+.reisezeit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 3 Bilder nebeneinander */
+.drei_bilder_34 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.galerieburo {  
+  float: left;  
+  list-style-type: none;  
+  padding-left: 0px;  
+  margin-top: 5%;
+}
+
+.galerieburo li {  
+  float: left;  
+  height: 12.5em;  
+  margin-left: 1%;  
+  list-style-position: outside;  
+  width: 18.75em;  
+  margin-right: 1%;  
+  padding-bottom: 1.25em;
+}
+
+.galerieburo_img {  
+  width: 18.75em;  
+  height: 12.5em;  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;  -webkit-border-radius: 4% 4% 4% 4% / 6% 6% 6% 6%;
+  border-radius: 4% 4% 4% 4% / 6% 6% 6% 6%;
+}
+
+iframe {  
+  border-top-width: thin;  
+  border-right-width: thin;  
+  border-bottom-width: thin;  
+  border-left-width: thin;
+}
+
+/* Animation von Bildern - Zeitverlauf */
+.img_animation {
+  z-index: 8000;
+  position: relative;
+  /*float: left;*/
+  -o-transition: all 1.5s ease 0.25s;
+  -webkit-transition: all 1.5s ease 0.25s;
+  transition: all 1.5s ease 0.25s;
+}
+
+/* Animation von Bildern - Vergrößern um Faktor 1.5 */
+.animiert:hover,
+.animiert:active{
+    z-index: 8050;
+    position: relative;
+    -o-transition: all 1.5s ease 0.25s;
+    -webkit-transition: all 1.5s ease 0.25s;
+    transition: all 1.5s ease 0.25s; -webkit-transform:  scale(1.5, 1.5) translateX(52%); 
+    transform: scale(1.5, 1.5) translateX(0%);
+}
+
+/* Gestaltung der Seiten Deutschland, Kanaren */
+
+/* Flexcontainer für Miniaturbilder der Regionen */
+.reise_flex_container1 {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Flex-Item der einzelnen Region */
+
+.reise_flex-item{
+    flex: 0 0 20rem;
+    margin: 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.reise_flex-item a { /*Display Block, damit der Link unter dem Thumbnail angezeigt wird */
+    display: block;
+}
+
+
+
+.reise_titelbild {
+    width: 100%;
+    text-align: justify;
+}
+
+.reise_titelbild_pan {
+    display: block;
+    margin: 3em auto;
+}
+
+.liste_1 {
+    margin-left: 2.5em; /* 40px */
+}
+
+.text_mitte {
+    text-align: center;
+}
+
+.text_rechts {
+    text-align: right;
+}
+
+.letter75 {
+    font-size: calc(1.6rem*0.75);
+}
+
+.letter110 {
+    font-size: calc(1.6rem*1.1);
+}
+
+.letter120 {
+    font-size: calc(1.6rem*1.2);
+}
+
+.letter140 {
+    font-size: calc(1.6rem*1.4);
+}
+
+
+.unterstrichen {
+    text-decoration: underline;
+}
+
+.fett {
+    font-weight: bold;
+}
+
+.bild_reiseb_titel {
+    float: left; 
+    margin-right: 2.5em; 
+    margin-bottom: 1.5em;
+}
+
+.bild_reiseb_goodb {
+    -webkit-border-radius: 8% 8% 8% 8% / 7% 7% 7% 7%;
+    border-radius: 8% 8% 8% 8% / 7% 7% 7% 7%;  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+    width: 14.25em; 
+    height: 15em;  
+    margin: 0 auto;
+}
+
+.rb_intro {
+    margin-left: 27.5em;
+}
+
+.rb_stationen {
+    margin-left: 0;
+    font-size: 2rem;
+    line-height: 4rem;
+    width: 100%;
+    list-style-type: none; 
+    margin-top: 3rem; 
+    margin-bottom: 5rem; 
+    text-align: center;
+}
+
+.rb_absatz_1 {
+    float: left;
+    margin-bottom: 1%;
+}
+
+.rb_absatz_2 {
+    margin-top: 0.75em;
+}
+
+/* Mobile first */
+
+.rb_bild_li,
+.rb_bild_re {
+    display: block;
+}
+
+@media only screen and (min-width:650px) {
+    .rb_bild_li {
+    float: left; 
+    margin-right: 2.5em;
+    }
+
+.rb_bild_re {
+    float: right;
+    margin-left: 2.5em;
+    margin-right: 0.375em;
+    }
+}
+
+
+
+/* Miniaturbild auf den Seiten Deutschland, Kanaren, Seychellen */
+.rb_thumbnail {
+    -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+    box-shadow: 5px 5px 5px 1px #54a9a9;  
+    -webkit-border-radius: 6% 6% 6% 6% / 8% 8% 8% 8%;
+    border-radius: 6% 6% 6% 6% / 8% 8% 8% 8%;  
+    margin-bottom: 5%; 
+    width: 20rem; /* 200px */ 
+    height: 15rem; /* 150px */
+}
+
+.sprung {
+    width: 100%;
+    font-size:160%;
+    text-align: center;
+    float:left;
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+
+.liste_button {
+    font-size: 1em;
+    width: 25rem;
+    background-color: #0000e2;
+    color: #ffcc33;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+.back_button {
+    font-size: 1em;
+    background-color: #0000e2;
+    color: #fff;
+    padding: 0.35em;
+    margin-left: 1em;
+    margin-right: 1em;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+            
+.liste_button:hover,
+.back_button:hover {
+    background-color: #ff9900;
+    color: black;
+}
+
+.active_back_button {
+    font-size: 1em;
+    width: 15%;
+    background-color: grey;
+    color: #ffcc33;
+    padding: 0.35em;
+    margin-left: 1em;
+    margin-right: 1em;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+/* Seite Impressum */
+
+#nr1 { 
+    margin-bottom: 7%;  
+    margin-top: 7%;
+}
+
+/* Seite Ägypten, Hurtigruten */
+/* Gestaltung von Aufzählungen auf den Seiten - Kurz zusammengefasst*/
+.eignung_1 {
+    padding: 0;
+    margin: 2rem 20%;
+}
+
+/* Seite Wellness und mehr */
+/* IFrame responsiv gestalten */
+
+.iframe-wrapper {
+    position: relative;
+    height: 0;
+    margin: 0 auto;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#wrap_w_u_m {
+    width: 85%;
+    padding-bottom: 100%;
+    margin-bottom: 2%;
+}
+
+#iframe_welln_u_mehr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-color: rgb(204, 204, 204);
+}
+
+/* Seite Gut versichert reisen */
+
+#inlineframe1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Seite USA */
+
+#flagge_usa {
+    display: block;
+    margin: 3em auto;
+    width: 42%;
+    min-width: 28rem;
+    height: auto;
+}
+
+.imapusa {
+    height: 40rem;
+}
+
+
+
+/* Seite Australien und zugehörige Unterseiten */
+
+.imapaussie{
+    height: 30rem;
+}
+
+#highlight{
+    padding-top: 2rem;
+}
+
+.aussie_button {
+    font-size: 2rem;
+    width: 90%;
+    background-color: #0000e2;
+    color: #ffcc33;
+    margin: 1rem auto;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+.aussie_button:hover {
+    background-color: #ff9900;
+    color: black;
+}
+
+.active_aussie_button {
+    font-size: 2rem;
+    width: 90%;
+    background-color: grey;
+    color: #ffcc33;
+    margin: 1rem auto;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+    
+#frog {  -webkit-border-radius: 7% 7% 7% 7% / 5% 5% 5% 5%;
+  border-radius: 7% 7% 7% 7% / 5% 5% 5% 5%;  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;  
+  margin-top: 2%;  
+  margin-bottom: 2%;
+}
+
+#quokka { 
+  margin-top: 2%;  
+  margin-bottom: 2%;
+  width: 10rem;  
+  height: 20rem;  -webkit-border-radius: 8% 8% 8% 8% / 5% 5% 5% 5%;
+  border-radius: 8% 8% 8% 8% / 5% 5% 5% 5%;  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+/* Mobile First */
+#disc_aussie {
+    width: 70%;
+    max-width: 40rem;
+    min-width: 28rem;
+    height: auto;
+    margin: 1.6rem auto;
+}
+
+#map_aussie {
+   width:46.6%;
+    max-width: 30rem; /* 300px */ 
+    min-width: 21rem;
+    height: auto;  /* 400px */
+    margin: 1.6rem auto; 
+}
+
+@media only screen and (min-width:650px) {
+    #disc_aussie {
+        width: 42%;
+        min-width: 28rem;
+        max-width: 40rem;/* 400px */  
+        height: auto; /* 300px */
+        margin: 1.6em auto;
+    }
+    
+    #map_aussie {
+        width: 40%;
+        min-width: 21em; /* 300px */  
+        height: auto;  /* 400px */
+        margin: 4em auto;
+    }
+}
+
+
+/* Seite Mallorca */
+
+.hotelstandorte {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    font-size: 2rem;
+                
+}
+
+.reise_orte {
+    flex: 0 1 20rem;
+    min-width: 17rem;
+    margin: 1rem;
+    
+}
+
+#inlineframe_la {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+
+@media only screen and (max-width:759px) and (orientation:portrait) {
+    /* Seite Latainamerika */
+    #iwrapper_la {
+        width:90%;
+        padding-bottom: 125%;
+        
+    } 
+    /* Seite Gut versichert */
+    #wrap_mdt_erv {
+        width: 90%;
+        padding-bottom: 125%;
+    }
+}
+
+@media only screen and (max-width:759px) and (orientation:landscape) {
+    /* Seite Latainamerika */
+    #iwrapper_la {
+        padding-bottom: 57.5%;
+        width:100%;
+    } 
+    /* Seite Gut versichert */
+    #wrap_mdt_erv {
+        width: 90%;
+        padding-bottom: 57.5%;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    /* Seite Latainamerika */
+    #iwrapper_la {
+        padding-bottom: 75%;
+        width:100%;
+    }
+    /* Seite Gut versichert */
+    #wrap_mdt_erv {
+        width: 78%;
+        padding-bottom: 75%;
+    }
+}
+
+/* Seite Gruppenreise */
+
+#gr_img_flex {
+    display: block;
+    width:90%;
+    min-width: 28rem;
+    margin: 0 auto;
+}
+
+#gr_img_2 {
+    width: 49%;
+}
+
+#gr_img_1{
+    width: 100%;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+    border-radius: 4% 4% 4% 4% / 2% 2% 2% 2%;
+}
+
+#gr_img_2 {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+#gr_frank {
+    width:100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+    border-radius: 7% 7% 7% 7% / 6% 6% 6% 6%;
+}
+
+#gr_map {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#gr_img_3 {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+    border-radius: 7% 7% 7% 7% / 6% 6% 6% 6%;
+}
+/*
+#teamportraets{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#teamportraets img {
+    margin: 2%;
+    
+} */
+
+@media only screen and (min-width:650px) {
+    #gr_img_flex {
+    width:49%;
+    min-width: 28rem;
+    padding-bottom: 1.5rem;
+    margin-right: 3%;
+    }
+    
+    #gr_img_1{
+    width: 100%;
+    margin-right: 2%;
+    
+    box-shadow: 5px 5px 5px 1px #54a9a9;
+    border-radius: 4% 4% 4% 4% / 2% 2% 2% 2%;
+}
+    
+    #gr_img_2 {
+    width: 20%;
+    height: auto;
+    margin-left: 2%;
+    
+    }
+    
+    #gr_map {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    }
+    
+}
+
+/* Seite Stellenngebot */
+
+#stellenanzeige {  
+    width:100%; 
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#cont_stelle {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#keinestelle {
+    text-align: center;
+    width: 93.75%; 
+    height: 50em;
+}
+
+/*seite AIDAprima */
+
+#aida_banner {
+    width: 100%;
+    min-width: 28rem;
+}
+
+#aida_laecheln {
+    width: 80%;
+    height: auto;
+}
+
+#aida_hinweis {
+    margin-top: 20px;
+    position: relative;
+    float:left;
+}
+
+/* Gestaltung der Seiten Reisetipps und Online buchen */
+/* Allgemeiner Teil */
+
+.tippwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 160%;
+}
+
+.tippwrapper > div > div {
+    width: 18em;
+    margin: 0 1em;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.tipp_logo {
+    padding-bottom:1em;
+    text-align: center;
+    width: 12.5em;  /* 200px */  
+    height: 8.75em;  /* 140px */
+}
+
+.tipp_text {
+    padding-bottom: 2em;
+    margin-right: 1em;
+}
+
+/* Spezifischer Teil */
+/* Seite Reisetipps */
+
+#aa,
+#medizin {  
+  width: 12.5em;  /* 200px */  
+  height: 8.75em;  /* 140px */  
+  float: left;
+  -webkit-border-radius: 10% 10% 10% 10%;
+  border-radius: 10%;
+  padding-right: 0.625em;  /* 10px */
+}
+
+#geld,
+#wetter,
+#checkliste {  
+  width: 12.5em;  /* 200px */ 
+  height: 8.75em;  /* 140px */  
+  padding-right: 0.625em;  /* 10px */ 
+  float: left;
+}
+
+#esta {  
+  width: 17.5em;  /* 280px */  
+  height: 6.25em;  /* 100px */
+}
+
+/* Seite Online buchen */
+
+#kf_onl,
+#vers_onl,
+#haus_onl,
+#wum_onl,
+#la_onl {  
+  width: 12.5em;  /* 200px */  
+  height: 8.75em;  /* 140px */  
+  -webkit-border-radius: 10% 10% 10% 10%;
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+
+#slr_onl {  
+  width: 17.5em;  /* 280px */  
+  height: 6.25em;  /* 100px */
+  margin-top: 1.5em;
+  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;
+}
+  
+#der_onl { 
+  width: 17.5em;  /* 280px */  
+  height: 4.265em;  /* 100px */
+  margin-top: 3.5em;
+  -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;
+}

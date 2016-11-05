@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <title>Mah&#233;</title>
+        <script src="js/libs/modernizr.custom.32125.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Frank Neumann">
+        <meta name="Publisher" content="Reisebüro Horneburg">
+        <meta name="Revisit-after" content="5 days">
+        <meta name="Keywords" content="Reisebüro,Horneburg,Stade,Buxtehude,Jork,Bliedersdorf,Nottensdorf,Urlaub,Reise,Touristik,Maledieven, Insel">
+        <meta name="description" content="Reisebüro Horneburg: Auf dieser Seite erfahren Sie etwas über die Hauptinselwelt der Seychellen - Mah&#233;.">
+        <meta name="Robots" content="index, follow">
+        <link rel="stylesheet" type="text/css" href="css/libs/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/libs/jquery-ui.structure.min.css">
+        <link rel="stylesheet" type="text/css" href="css/libs/jquery-ui.theme.min.css">
+        <!-- SmartMenus core CSS (required) -->
+        <link href='css/smartmenu/sm-core-css.css' rel='stylesheet' type='text/css' />
+        <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+        <link href='css/smartmenu/sm-blue.css' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/rbh_hor.css" type="text/css">
+        <link rel="stylesheet" href="css/slick/slick.css" type="text/css">
+        <link rel="stylesheet" href="css/slick/slick-theme.css" type="text/css">
+        <script src="js/libs/prefixfree.min.js"></script>
+    </head>
+    <body> <!--     Seitencontainer definieren    -->
+        <div id="seite">
+            <!--     Der Seitenkopf mit Logo und Überschrift   -->
+            <header id="header_page">
+                <img src="css/images/rbh_banner_1920x300.jpg" alt="background">
+                <h1 id="seitentitel">Mah&#233;</h1>
+            </header>
+            <!--     horizontale Navigationsleiste
+                Der Inhalt des <nav>-Containers wird durch das Script
+                nav_and_footer.js generiert -->
+            <nav></nav>
+            <!-- Seiteninhalt  -->
+            <div id="inhalt">
+                <figure class="bildtitelpan">
+                    <img class="bildpan reise_titelbild_pan" alt="Panorama Anse Takamaka"
+                        title="Panorama Anse Takamaka"
+                        src="grafiken/seite_mahe/pan_anse_takamaka_mahe.jpg">
+                    <span>Anse Takamaka</span>
+                </figure>
+                <section class="reisezeit">
+                    <article>
+                        <figure class="reisebildsize34 rb_bild_li">
+                            <img class="bild34 animiert img_animation" alt="Karte von Mah&#233;"
+                                title="Mah&#233; Map" src="grafiken/seite_mahe/mahe_map.jpg">
+                        </figure>
+                        <p>Mah&#233; ist die Hauptinsel der Seychellen.  Auf ihr leben etwa 90% 
+                            der Seycheller. Ein Drittel der Bewohner Mah&#233;s wiederum wohnen
+                            in und um die Hauptstadt Victoria. Auf Mah&#233; befinden sich zudem
+                            der internationale Flughafen und der einzige Tiefwasserhafen des 
+                            Inselstaates.<br>
+                            Mah&#233; ist landschaftlich sehr abwechslungsreich. Die Granitinsel
+                            ragt steil aus dem Meer. Die mit rund 900 m höchsten Erhebungen findet man im 
+                            Morne Seychellois Nationalpark im Norden. Die im Vergleich zu den anderen Inseln
+                            höheren Berge sorgen auf Mah&#233; auch für etwas ergiebigere Niederschläge.
+                            Die Insel bietet natürlich Strände und üppige Vegetation. Besucher können
+                            selbst entfernte Winkel erkunden. Die ganze Insel verfügt über ein 
+                            gut ausgebautes Straßennetz. Es besteht somit die Möglichkeit, mit dem 
+                            Auto auf eigene Faust die Schönheiten Mah&#233;s zu entdecken. Wer
+                            nicht so gern selbst fährt, der kann die öffentlichen Busse nutzen.
+                            Auch mit diesen kann die gesamte Insel besucht werden.<br>
+                            Das Herz Mah&#233;s schlägt natürlich in der Hauptstadt. Entsprechend
+                            ist das Verkehrsaufkommen am Morgen und am Nachmittag sehr hoch. Für
+                            Selbstfahrer gilt es dann, jede Ungeduld beiseite zu schieben.<br>
+                            Victoria und das Badezentrum, mit dem berühmten Beau Vallon liegen 
+                            im Norden. Der Kontrast zum deutlich ruhigeren Süden ist schon erheblich. 
+                            An der Ostküste findet man kaum Badebuchten.
+                            Dafür gibt es an der Südwestküste zahlreiche attraktive Buchten mit feinen 
+                            Sandstränden. Gerade dort haben sich in den vergangenen Jahren zahlreiche,
+                            meist luxuriöse Hotels angesiedelt.
+                        </p>
+                    </article> 
+                </section>
+                <ul id="liste_mahe" class="rb_stationen">
+                    <li><button class="liste_button" 
+                                onclick="return open_page('#nord')">Der Norden Mah&#233;'s</button></li>
+                    <li><button class="liste_button" 
+                                onclick="return open_page('#sued')">Der Süden Mah&#233;'s</button></li>
+                    <li><button class="liste_button" 
+                                onclick="return open_page('#victoria')">Victoria</button></li>
+                 </ul>
+                <!-- Abschnitt Mah&#233;'s Norden  -->
+                <section id="nord">
+                    <h2>Der Norden Mah&#233;'s</h2>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_li">
+                                <img class="bild43" alt="Baie Beau Vallon"
+                                    title="Baie Beau Vallon"
+                                    src="grafiken/seite_mahe/beau_vallon_1.jpg">
+                                <span>Baie Beau Vallon</span>
+                            </figure>
+                            <p>Zunächst wollen wir der berühmten Baie 
+                                Beau Vallon einen Besuch abstatten. Sie bildet wohl den touristischen 
+                                Schwerpunkt der Insel. Die große Bucht im Nordwesten Mah&#233;s ist
+                                sicher eine der schönsten und beliebtesten der Insel. Zu erreichen
+                                ist die Baie Beau Vallon von Victoria aus mit dem Auto in etwa 
+                                20 Minuten. Sie spannt einen über mehrere Kilometer langen Bogen
+                                und bietet einen reizvollen Kontrast zwischen den hinter der
+                                Bucht aufragenden Bergen und dem Meer. Hier kann der Besucher sehr 
+                                gut baden, da die Dünung eher gering ist. Zudem lädt der weiße, 
+                                feine Sandstrand ein, sich in der Sonne auszustrecken. Die vielen
+                                Kokospalmen und Takamakabäume bieten aber auch genug Schatten, sollte
+                                die Sonne zu kräftig strahlen. An der Baie Beau Vallon sind zahlreiche
+                                Hotels zu finden. Trotzdem ist der Strand in der Bucht nicht übervölkert. 
+                                Erholung und Ruhe kann man also auch hier finden. 
+                            </p>
+                            <p>Fährt man auf der Küstenstraße von der Baie Beau Vallon weiter in 
+                                Richtung Norden, passiert man bald den Ort Glacis. Wenig später 
+                                kann man einen Blick auf die kleine Insel L'&#206;lot werfen, bevor 
+                                der nördlichste Punkt Mah&#233;s - North East Point - erreicht wird.
+                                Von der Straße bietet sich ein wunderbares Panorama. Wenn die 
+                                Möglichkeit besteht, sollte hier die Fahrt kurz unterbrochen werden, 
+                                um den Ausblick zu genießen. Weiter führt die Straße ein kurzes Stück 
+                                gen Osten und man erreicht den Carana Beach.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_re">
+                                <img class="bild43" alt="Carana Beach" title="Carana Beach"
+                                    src="grafiken/seite_mahe/carana_beach.jpg">
+                                <span>Carana Beach</span>
+                            </figure>
+                            <p>Hier wird die Küste etwas rauer. Daher
+                                ist Carana Beach ein besonders bei Surfern beliebter Strand. 
+                                Vielleicht haben auch Sie die Gelegenheit, ein paar Wassersportlern
+                                bei ihren Wellenritten zuzusehen.<br>
+                                Von Carana Beach fällt die Straße in Richtung Süden ab. Immer 
+                                dicht an der Küste entlang gelangt man bald zur Anse Nord d'Est. 
+                                Hier sollte man die Augen offen halten. Ansonsten verpasst man 
+                                den Hinweis auf "Kreolfleurage", eine kleine Parfum-Manufaktur. 
+                                Ein Stop lohnt sich auf jeden Fall. Selbst hergestellte Parfums werden 
+                                dem Besucher angeboten. Zwar ist die Auswahl nicht sehr groß. 
+                                Dafür erhält man zu einem angemessenen Preis Düfte, die nur hier 
+                                produziert werden. Zwar kann man die Kreationen auch in manchen 
+                                Läden Victorias kaufen. Doch sind sie direkt bei "Kreolfleurage" 
+                                deutlich günstiger zu erstehen. Nehmen Sie sich also Zeit und
+                                probieren Sie in aller Ruhe. Sicher ist auch für Sie der passende 
+                                Duft dabei.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_li">
+                                <img class="bild43" alt="Road Sans Souci" title="Road Sans Souci"
+                                    src="grafiken/seite_mahe/road_sans_souci.jpg">
+                                <span>Auf der Road Sans Souci unterwegs</span>
+                            </figure>
+                            <p> Nach dem sicher interessanten Aufenthalt
+                                in der Parfum-Manufaktur führt die Reise Richtung Süden wieder sehr schnell
+                                in die Hauptstdat Victoria. Je nachdem, wie weit der Tag bereits voran 
+                                geschritten ist, kann man sich nun direkt auf den Weg in sein Hotel begeben,
+                                oder man fährt noch einmal durch die Innenstadt hinauf zur Road Sans Souci.<br>
+                                Diese spektakuläre Panoramastraße schlängelt sich bis zu einer Passhöhe von
+                                ca. 500 m hinauf. Es bieten sich immer wieder grandiose Ausblicke über die 
+                                Insel und hinaus auf das Meer. An einigen Stellen gibt es die Möglichkeit,
+                                das Auto gefahrlos abzustellen und eine kurze Rast einzulegen. Dies sollte
+                                man nutzen und das Panorama auf sich wirken lassen.<br>
+                                Kurz nachdem man den höchsten Punkt der Straße passiert hat, erreicht man die
+                                Tea Factory. 
+                            </p>
+                        </article>
+                    </section>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_re">
+                                <img class="bild43" alt="Tea Factory" title="Tea Factory"
+                                    src="grafiken/seite_mahe/tea_factory_1.jpg">
+                                <span>Tea Factory</span>
+                            </figure>
+                            <p>Für Teekenner und Teeliebhaber lohnt sich
+                                ein Abstecher auf jeden Fall. Man kann viel über die Teeherstellung 
+                                erfahren und sich auch gleich noch mit diversen Teesorten versorgen.
+                            </p>
+                            <p>Anschließend geht es auf der steil abfallenden Straße in vielen Kurven 
+                                wieder hinab bis auf Meeresspiegelhöhe. Dabei bieten sich viele schöne 
+                                Aussichten, bevor man Port Glaud an der Westküste erreicht.
+                                In Port Glaud biegt man rechts ab, auf die Küstenstraße in Richtung 
+                                Norden. Nach kurzer Fahrt erreicht der Besucher La Plaine und 
+                                findet eine kleine Bucht mit feinem Sandstrand vor. Sicher noch
+                                einmal eine gute Gelegenheit, um ein wenig die Anstrengungen der Autofahrt
+                                bei einem Bad im Meer und einem Sonnenbad am Strand abzuschütteln.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_li">
+                                <img class="bild43" alt="La Plaine" title="La Plaine"
+                                    src="grafiken/seite_mahe/la_plaine.jpg">
+                                <span>La Plaine</span><br>
+                            </figure>
+                            <p> Nach einem Tag voller Eindrücke sollte 
+                                die Rückfahrt ins Hotel nicht allzu spät angetreten werden. Auf
+                                den engen und kurvigen Straßen, die zudem unbeleuchtet sind, ist es 
+                                nicht immer ein Vergnügen, im Dunkeln noch mit dem Auto unterwegs zu 
+                                sein. Vor allem unerwartet auftauchende Fußgänder oder Haustiere (vor
+                                allem Hunde) können dann für die eine oder andere Schrecksekunde sorgen.
+                                Wer allerdings Gelassenheit übt und nicht zu schnell unterwegs 
+                                ist, der sollte auch am späten Abend sein Ziel sicher erreichen.
+                            </p>
+                        </article>
+                    </section>
+                    <div class="sprung">
+                        <button class="back_button" onclick="return open_page('#liste_mahe')">zurück</button>
+                    </div>
+                </section>
+                <!-- Ende Abschnitt Mah&#233;'s Norden  -->
+
+                <!-- Abschnitt Mah&#233;'s Süden  -->
+                <section id="sued">
+                    <h2>Der Süden Mah&#233;'s</h2>
+                    <p>Die Rundtour durch den Inselsüden wollen
+                        wir wiederum in Victoria starten. Vom Zentrum der Hauptstadt fährt
+                        man auf der Revolution Road und biegt dann in die Bel Air Road ab,
+                        an deren Ende man rechts auf die bereits bekannte Road Sans Souci 
+                        einbiegt.
+                    </p>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_li">
+                                <img class="bild43" alt="Port Glaud" title="Port Glaud"
+                                    src="grafiken/seite_mahe/port_glaud.jpg">
+                                <span>Port Glaud</span>
+                            </figure>
+                            <p>Nun kann man, wie bereits auf der Fahrt 
+                                durch den Norden, erneut die Schönheit der Bergwelt Mah&#233;s genießen.
+                                Vorbei an der Tea Factory führt der Weg hinab nach Port Glaud.
+                                Nur biegt man heute in dem Ort nach links ab. Die Küstenstraße
+                                an der Westküste verläuft weitgehend direkt am Meer entlang,
+                                in Richtung Süden. Man fährt an vielen kleinen, attraktiven Buchten 
+                                vorbei, die teilweise mit feinen Sandstränden einladen, ein wenig 
+                                zu verweilen.<br>
+                                Die letzte Bucht, an der man auf der Fahrt entlang der Westküste
+                                in Richtung Süden vorbeikommt, ist die Anse Takamaka. Es lohnt sich,
+                                an dieser Stelle die Straße zu verlassen und der Bucht einen kurzen
+                                Besuch abzustatten. Erwartet wird man von einem sehr schönen, fotogenen
+                                Strand. Natürlich wird man der Versuchung kaum widerstehen und ein Bad im 
+                                warmen, klaren Wasser des Indischen Ozeans nehmen.
+                            </p>
+                        </article>
+                    </section> 
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_re">
+                                <img class="bild43" alt="Anse Takamaka" title="Anse Takamaka"
+                                    src="grafiken/seite_mahe/anse_takamaka.jpg">
+                                <span>Anse Takamaka</span>
+                            </figure>
+                            <p>Wie eigentlich fast überall an den Stränden auf den Seychellen kann
+                                der Besucher auch in der Anse Takamaka die Ruhe genießen. Er wird
+                                nur vereinzelt andere Gäste treffen. Daher ist auch das ungestörte
+                                Fotografieren der bizarren, vereinzelt am Strand aufragenden
+                                Felsen kein Problem.
+                                Entspannt und mit schönen Fotomotiven im Gepäck, kann die Fahrt
+                                durch den Süden fortgesetzt werden.<br>
+                                Kurz hinter der Anse Takamaka biegt die Straße in Richtung Osten ab.
+                                Nachdem die Ortschaft Quatre Bornes passiert ist, trifft man an 
+                                der Anse Louise auf die Ostküste Mah&#233;s. Von hier führt die Straße eng an 
+                                die Küste geschmiegt in Richtung Norden. Natürlich gibt es auch 
+                                an der Ostküste immmer wieder reizvolle Buchten und Strände. 
+                                Allerdings muss man von Mai bis September mit starker Brandung 
+                                und erheblichen Strömungen rechnen. Baden ist also nur bedingt 
+                                möglich.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_li">
+                                <img class="bild43" alt="Domaine Val des Pres"
+                                    title="Domaine Val des Pres"
+                                    src="grafiken/seite_mahe/val_des_pres.jpg">
+                                <span>Domaine Val des Pres</span><br>
+                            </figure>
+                            <p>Auf dem Weg gibt es einige Stationen,
+                                die es wert sind, besucht zu werden. So z. B. das Domaine Val des Pres, 
+                                wo Handwerker ihre Kunst präsentieren und selbst gefertigte Produkte 
+                                anbieten. Dort hat man die Gelegenheit, u. a. eine Schiffsmodellwerkstatt 
+                                zu besuchen und dem Modellbauer über die Schulter zu sehen.<br>
+                                Vielleicht reizt Sie ja auch ein Besuch im Jardin du Roi, in dem
+                                viele exotische Gewürze zu entdecken sind.<br>
+                                Oder Sie probieren verschiedene Varianten des speziellen Takamaka-Rums 
+                                bei einer Verkostung in einer Rum Destillerie.<br>
+                                Nach den kleinen Abstechern führt die Fahrt schließlich vorbei am Flughafen. 
+                                Hier kann man entweder die breit ausgebaute Schnellstraße oder 
+                                die malerische Mont Fleuri Road nach Victoria, dem Ausgangs- 
+                                und Zielpunkt der Rundfahrt nutzten.
+                            </p>
+                            <p>
+                                Wie zu sehen, bietet auch der etwas beschaulichere Süden Mah&#233;s
+                                seinen Besuchern einige Möglichkeiten, das Flair der Seychellen zu
+                                erleben. Man sollte sich also durchaus die Zeit nehmen und auf
+                                Entdeckungsreise gehen.
+                            </p>
+                        </article>
+                    </section>
+                    <div class="sprung">
+                        <button class="back_button" onclick="return open_page('#liste_mahe')">zurück</button>
+                    </div>
+                </section>
+                <!-- Ende Abschnitt Mah&#233;'s Süden  -->
+        
+                <!-- Abschnitt Victoria  -->
+                <section id="victoria">
+                    <h2>Victoria</h2>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize34 bildtitel34 rb_bild_li">
+                                <img class="bild34" alt="Clock Tower" title="Clock Tower"
+                                    src="grafiken/seite_mahe/clock_tower_2.jpg">
+                                <span>Clock Tower</span>
+                            </figure>
+                            <p>Victoria ist eine der kleinsten, aber wegen ihrer Lage sicher auch
+                               eine der reizvollsten Hauptstädte der Welt. Ihren besonderen Charme
+                               zieht die Stadt einerseits natürlich aus ihrer Lage am Meer. Andererseits
+                               bilden die im Westen steil aufragenden Berge den besonderen Kontrast.
+                               Zudem sind noch zahlreiche Häuser aus Holz gebaut, so dass den Besucher 
+                               ein Ort empfängt, der sicher seinen Vorstellungen von einer tropischen
+                               Kleinstadt entspricht. Ob der koloniale Charme auch kommende Jahre
+                               überdauert ist allerdings nicht sicher, denn bereits jetzt wächst
+                               Victoria und es entstehen viele nüchterne Betonblocks.
+                               Darüber hinaus nimmt auch der Autoverkehr stetig zu. Daher wurden
+                               bereits kostenpflichtige Parkplätze und mit der Market Street eine 
+                               kleine Fussgängerzone geschaffen.
+                            </p>
+                            <p>Ein bekanntes Wahrzeichen Victorias ist der Clock Tower. Er steht am
+                                westlichen Ende der Independance Avenue und ist eine Kopie des Uhrenturms 
+                                an der Vauxhall Bridge Road in London. Der Turm ist etwa 8 m hoch.
+                                Er wurde 1903 errichtet, als die Seychellen zur eigenständigen
+                                britischen Kronkolonie erklärt wurden. Eine Besonderheit: Das mechanische
+                                Uhrwerk wird nach wie vor von Hand aufgezogen.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_re">
+                                <img class="bild43" alt="Markt" title="Markt"
+                                    src="grafiken/seite_mahe/market.jpg">
+                                <span>Sir Selwyn Selwyn-Clarke Market</span>
+                            </figure>
+                            <p>Victoria, zumindest der Stadtkern, ist schnell
+                                zu Fuß erkundet. Allerdings sollte man auch, oder gerade, in der 
+                                Stadt alles gemächlich angehen. Die Sonne und die Luftfeuchtigkeit
+                                sorgen nicht immer unbedingt für ein angenehmes Klima. Mit der nötigen Ruhe
+                                ist jedoch ein Stadtbummel kein Problem.<br>
+                                Unweit vom Clock Tower trifft man auf die westwärts führende 
+                                Revolution Road, eine der Hauptstraßen. Natürlich findet man dort
+                                einige Geschäfte. Wer allerdings hofft, gut shoppen zu können, wird 
+                                sicher enttäuscht.<br>
+                                Auf halber Höhe der Revolution Road kann man rechts in die
+                                Quincy Street abbiegen. Vorbei an einem hinduistischen Tempel
+                                erreicht man schnell die Market Street. Sie beherbergt neben
+                                zahlreichen kleinen Läden mit Souvenirs und Waren des täglichen 
+                                Bedarfs auch den Sir Selwyn Selwyn-Clarke Market. Der Markt ist
+                                sehenswert und wie wir finden ein Muss für jeden Besucher Victorias.
+                                Auf dem Markt findet man Souvenirs, Gewürze, Tee, verschiedene Früchte
+                                und natürlich nicht zu vergessen alles, was das Meer bietet. Zweimal
+                                täglich wird fangfrischer Fisch angeboten. Ein Erlebnis den Verkauf mitzuerleben.
+                            </p>
+                            <p>Wer beim Anblick der Köstlichkeiten des Indischen Ozeans Appetit auf 
+                                maritime Kost bekommt, der kann diesen in einem der in der Innenstadt
+                                vorhandenen Restaurants sicher stillen.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="reisezeit">
+                        <article>
+                            <figure class="reisebildsize43 bildtitel43 rb_bild_li">
+                                <img class="bild43" alt="Botanischer Garten"
+                                    title="Botanischer Garten"
+                                    src="grafiken/seite_mahe/botanischer_garten.jpg">
+                              <span>Botanischer Garten</span>
+                            </figure>
+                            <p>Was bei einem Ausflug nach Victoria nicht 
+                                fehlen sollte, ist ein 
+                                Besuch im Botanischen Garten. Ein klein wenig außerhalb des 
+                                Stadtzentrums gelegen, bietet die Anlage dem interessierten Besucher 
+                                viele einheimische Pflanzen, Riesenlandschildkröten und ein wenig Ruhe
+                                inmitten einer grünen Oase.  
+                            </p>
+                            <p>Besonders Liebhaber von Orchideen sollten den als Chinesischen Garten bezeichneten Bereich 
+                                aufsuchen. Dort finden sie zahlreiche dieser Pflanzen in wunderschöner
+                                Blütenpracht.
+                            </p>
+                        </article>
+                    </section>
+                    <p>Wir hoffen, der kurze Streifzug hat Ihnen
+                        gefallen und Sie konnten einen kleinen Eindruck von Mah&#233; gewinnen.
+                        In der nachfolgenden Fotogalerie haben wir für Sie noch einige 
+                        Bilder von der Insel zusammengestellt. Viel Spaß beim Anschauen.
+                    </p>
+                    <div class="fotogalerie">
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/anse_takamaka_1.jpg"
+                                alt="Anse Takamaka">
+                            <p>Anse Takamaka (1)</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/anse_takamaka_2.jpg"
+                                alt="Anse Takamaka">
+                            <p>Anse Takamaka (2)</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/anse_takamaka_3.jpg"
+                                alt="Anse Takamaka">
+                            <p>Anse Takamaka (3)</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/botanischer_garten_1.jpg"
+                                alt="Botanischer Garten - Coco de Mer">
+                            <p>Botanischer Garten - Coco de Mer</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/botanischer_garten_2.jpg"
+                                alt="Botanischer Garten - Riesen-Landschildkröten">
+                            <p>Botanischer Garten - Riesen-Landschildkröten</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/doubletree_by_hilton_1.jpg"
+                                alt="Doubletree by Hilton">
+                            <p>Doubletree by Hilton (1)</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/doubletree_by_hilton_2.jpg"
+                                alt="Doubletree by Hilton">
+                            <p>Doubletree by Hilton (2)</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/beau_vallon_1.jpg"
+                                alt="Beau Vallon">
+                            <p>Beau Vallon</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/spider.jpg"
+                                alt="Palm Spider">
+                            <p>Palm Spider</p>
+                        </div> 
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/la_plaine.jpg"
+                                alt="La Plaine">
+                            <p>La Plaine</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/tea_factory.jpg"
+                                alt="Tea Factory">
+                            <p>Tea Factory</p>
+                        </div>
+                        <div>
+                            <img class="fotogalerie_img" 
+                                 src="grafiken/galerie_mahe/val_des_pres.jpg"
+                                alt="Domaine Val des Pres">
+                            <p>Domaine Val des Pres</p>
+                        </div>
+                    </div>
+                    <div class="sprung">
+                        <button class="back_button" onclick="return open_page('#liste_mahe')">zurück</button>
+                    </div>
+                </section>
+                <hr>
+                <div class="hotelstandorte">
+                    <button class="back_button reise_orte" onclick="return open_page('praslin.html')">
+                        Praslin
+                    </button>
+                    <button class="back_button reise_orte" onclick="return open_page('la_digue.html')">
+                        La Digue
+                    </button>
+                    <button class="active_back_button reise_orte">Mah&#233;</button>
+                    <button class="back_button reise_orte" onclick="return open_page('seychellen.html')">
+                        Seychellen
+                    </button>
+                </div>
+                <hr>
+                <div class="hotelstandorte">
+                    <button class="back_button reise_orte" onclick="return open_page('#seitentitel')">
+                        Seitenanfang
+                    </button>
+                </div>
+            </div> <!-- Endtag des Inhaltscontainers -->
+                <!--                Footer
+                    Der Ingalt des Footer wird durch das Script 
+                    nav_and_footer_copyright.js generiert   -->
+            <footer></footer>
+        </div> <!-- Endtag des Seitencontainers -->
+        <!--    Java-Bibliotheken und Scripte   -->
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            document.write('<link rel="stylesheet" type="text/css" href="css/preload.css"/>');
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="js/libs/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/nav_and_footer.js"></script>
+        <script type="text/javascript" src="js/slick/slick.js"></script>
+        <!-- SmartMenus jQuery plugin -->
+        <script src="js/smartmenu/jquery.smartmenus.js" type="text/javascript"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <![if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]>
+        <!-- SmartMenus Menu-Button Plugin und Button-Auslöser für Rücksprung -->
+        <script type="text/javascript" src="js/myplugins.js"></script>
+        <script type="text/javascript" src="js/slick/galerie.js"></script>
+    </body>
+</html>

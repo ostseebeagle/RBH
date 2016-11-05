@@ -1,0 +1,79 @@
+/* 
+    Created on : 22.06.2016, 12:52:54
+    Author     : franks_macbook
+*/
+
+/* Seite Unser Büro */
+#map_canvas {
+    width: 90%;
+    height: 30em;
+    margin: 1.5em auto;
+}
+
+#standort {
+    width: 100%;
+}
+
+#buro_container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 481px) {
+    #map_canvas {
+        width: 75%; 
+        height: 50em; 
+        margin: 1.5em auto;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #map_canvas {
+        width: 42%; 
+        height: 50em; 
+        float: left;
+        margin-right: 2%; 
+        margin-top: 1em;
+        /*margin: 0 auto;*/
+    }
+
+    #standort {
+        width: 56%;
+        float: right;
+    }
+    
+    #buro_container {
+        display: block;
+    }
+}
+
+#tab_buero {
+    font-size: 160%;
+    text-align: center; 
+    width: 100%; 
+    height: 3.625em;
+}
+
+#flex_buro {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#flex_buro figure {
+    flex: 1 1 auto;
+    max-width: 30em;
+    min-width: 20em;
+    padding: 1em;
+}
+
+.buro_bild {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 5px 5px 5px 1px #54a9a9;
+  box-shadow: 5px 5px 5px 1px #54a9a9;  -webkit-border-radius: 4% 4% 4% 4% / 6% 6% 6% 6%;
+  border-radius: 4% 4% 4% 4% / 6% 6% 6% 6%;
+}
+

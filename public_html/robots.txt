@@ -1,0 +1,7 @@
+#robots.txt zu http://www.reisebuero-horneburg.de/
+
+User-agent: MJ12bot
+User-agent: spbot
+User-agent: YandexBot
+User-agent: EmailCollector
+Disallow: /

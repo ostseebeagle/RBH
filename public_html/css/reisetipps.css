@@ -1,0 +1,93 @@
+#tippwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 160%;
+}
+
+#tippwrapper > div > div {
+    width: 18em;
+    margin: 0 1em;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.tipp_logo {
+    padding-bottom:1em;
+    text-align: center;
+    width: 12.5em;  /* 200px */  
+    height: 8.75em;  /* 140px */
+}
+
+.tipp_text {
+    padding-bottom: 2em;
+    margin-right: 1em;
+}
+
+#aa {  
+  width: 12.5em;  /* 200px */  
+  height: 8.75em;  /* 140px */  
+  float: left;  -webkit-border-top-left-radius: 7%;
+  border-top-left-radius: 7%;  -webkit-border-top-right-radius: 10% 9%;
+  border-top-right-radius: 10% 9%;  
+  border-top-width: 0px;  
+  border-top-style: solid;  
+  border-top-color: initial;  
+  border-left-width: 0px;  
+  border-left-style: solid;  
+  border-left-color: initial;  
+  border-right-width: 0px;  
+  border-right-style: solid;  
+  border-right-color: initial;  
+  padding-right: 0.625em;  /* 10px */
+}
+
+#geld {  
+  width: 12.5em;  /* 200px */ 
+  height: 8.75em;  /* 140px */  
+  padding-right: 0.625em;  /* 10px */ 
+  float: left;
+}
+
+#wetter {  
+  width: 12.5em;  /* 200px */  
+  height: 8.75em;  /* 140px */ 
+  padding-right: 0.625em;  /* 10px */
+  float: left;
+}
+
+#medizin {  
+  width: 12.5em;  /* 200px */ 
+  height: 8.75em;  /* 140px */  
+  padding-right: 0.625em;  /* 10px */
+  float: left;  -webkit-border-radius: 10% 10% 10% 10%;
+  border-radius: 10%;
+}
+
+#checkliste {  
+    float: left;  
+    /*padding-bottom: 4.735em;  /* 70px */  
+    padding-right: 0.625em;  /* 10px */
+    width: 12.5em;  /* 200px */  
+    height: 8.75em;  /* 140px */
+    -webkit-border-radius: 0% 0% 0% 0%;
+    border-radius: 0%;
+}
+
+#esta {  
+  width: 17.5em;  /* 280px */  
+  height: 6.25em;  /* 100px */
+}
+/*
+.tipp_box_li {
+    width: 46.875%; /* 450px */ 
+/*    height: 15.625em;  /* 250px */ 
+ /*   float: left;
+}
+
+.tipp_box_re {
+    width: 46.875%; /* 450px */ 
+/*    height: 15.625em;  /* 250px */ 
+/*    margin-left: 53.125%;  /* 510px */
+/*} */
